@@ -5,8 +5,6 @@
 
 using namespace std;
 
-int smallest()
-
 int main() {
     int arr[10];
     int min, max;
@@ -19,14 +17,15 @@ int main() {
         cout << arr[i] << " ";
     }
 
-    // Smallest and largest number
-    cout << "\nLargest and smallest number: ";
+    // Largest number
+    cout << "\n";
     for(int i=0; i<10; i++){
         if(arr[i] > arr[i-1]){
-            max = arr[i];
+            cout << i << " ";
         }
         else{}
     }
-    cout << max;
+    cout << "\nLargest number: " << max << " ";
+    
     return 0;
 }
